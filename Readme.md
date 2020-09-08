@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Егор Лайт](https://up.htmlacademy.ru/htmlcss/29/user/1212331).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Приходкин](https://htmlacademy.ru/profile/prikhodkin).
 
 ---
 
