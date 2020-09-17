@@ -1,29 +1,346 @@
 /* colors */
 
 :root {
-    --basic-text: #000000;
-    --basic-extradark: #283136;
-    --basic-dark: #444444;
-    --basic-medium-dark: #666666;
-    --basic-grey: #A6A6A6;
-    --basic-grey-medium-light: #C1C1C1;
-    --basic-grey-light: #E1E1E1;
-    --basic-grey-extralight: #EEEEEE;
-    --basic-white: #FFFFFF;
+  --basic-title-dark: #000000;
+  --basic-title-light: #FFFFFF;
+  --basic-paragraph-dark: #283136;
+  --basic-paragraph-medium: #444444;
+  --basic-paragraph-light: #666666;
+  --basic-background: #EEEEEE;
 
-    --special-red: #FB565A;
-    --special-red-hover: #E74246;
-    --special-red-active: #D7373B;
 
-    --special-yellow: #EFC849;
-    --special-yellow-hover: #EAB534;
-    --special-yellow-active: #E5A722;
+  --special-red: #FB565A;
+  --special-red-hover: #E74246;
+  --special-red-active: #D7373B;
 
-    --special-green: #00CA74;
-    --special-green-hover: #00BC6C;
-    --special-green-active: #00AA62;
+  --special-yellow: #EFC849;
+  --special-yellow-hover: #EAB534;
+  --special-yellow-active: #E5A722;
+
+  --special-green: #00CA74;
+  --special-green-hover: #00BC6C;
+  --special-green-active: #00AA62;
 }
 
 /* styles */
+
+.page {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+/* header navigation */
+
+.main-header {
+  background-color: var(--basic-background);
+}
+
+.navigation-link, .cart-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--basic-title-dark);
+}
+
+.navigation-link:hover, .cart-link:hover {
+  transition-duration: 0.2s;
+  color: var(--special-red-hover);
+}
+
+.navigation-link:active, .cart-link:active {
+  color: var(--basic-title-dark);
+  opacity: 0.3;
+}
+
+.navigation-links li {
+  list-style-type: none;
+}
+
+/* slider */
+
+.slider-block {
+  background-color: var(--basic-background);
+}
+
+.slide-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slide-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-paragraph-dark);
+}
+
+.slide-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--basic-title-light);
+  background-color: var(--special-red);
+  padding: 16px 54px;
+  border-radius: 3px;
+}
+
+.slide-link:hover {
+  transition-duration: 0.2s;
+  background-color: var(--special-red-hover);
+}
+
+.slide-link:active {
+  background-color: var(--special-red-active);
+}
+
+.slide-link:active span{
+  opacity: 0.3;
+}
+
+.slide-item, .slide-button {
+  list-style-type: none;
+}
+
+.slide-button button {
+  background-color: var(--basic-title-light);
+}
+
+/* services */
+
+.service-card {
+  list-style-type: none;
+}
+
+.service-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.service-decription {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-paragraph-dark);
+}
+
+.service-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-title-light);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 3px;
+}
+
+  /* first card link */
+
+.web-site-button:hover {
+  transition-duration: 0.2s;
+  background-color: var(--special-red-hover);
+}
+
+.web-site-button:active {
+  background-color: var(--special-red-active);
+}
+
+.web-site-button:active span {
+  opacity: 0.3;
+}
+
+.web-site-button {
+  background-color: var(--special-red);
+}
+
+  /* second card link */
+
+.app-button:hover {
+  transition-duration: 0.2s;
+  background-color: var(--special-green-hover);
+}
+
+.app-button:active {
+  background-color: var(--special-green-active);
+}
+
+.app-button:active span {
+  opacity: 0.3;
+}
+
+.app-button {
+  background-color: var(--special-green);
+}
+
+  /* third card link */
+
+.presentation-button:hover {
+  transition-duration: 0.2s;
+  background-color: var(--special-yellow-hover);
+}
+
+.presentation-button:active {
+  background-color: var(--special-yellow-active);
+}
+
+.presentation-button:active span {
+  opacity: 0.3;
+}
+
+.presentation-button {
+  background-color: var(--special-yellow);
+}
+
+/* company */
+
+.company-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.company-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-paragraph-dark);
+}
+
+.orders-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--basic-paragraph-dark);
+}
+
+.order-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-paragraph-dark);
+}
+
+.stats-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.stats-point {
+  list-style-type: none;
+}
+
+.point-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-paragraph-dark);
+}
+
+.point-value {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+/* partners */
+
+.partner-item {
+  list-style-type: none;
+}
+
+/* contacts */
+
+.contact-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contact-address, .contact-phone a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  color: var(--basic-paragraph-light);
+}
+
+.contact-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-title-light);
+  background-color: var(--special-red);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 45px;
+  border-radius: 3px;
+}
+
+.contact-link:hover {
+  transition-duration: 0.2s;
+  background-color: var(--special-red-hover);
+}
+
+.contact-link:active {
+  background-color: var(--special-red-active);
+}
+
+.contact-link:active span {
+  opacity: 0.3;
+}
+
+/* footer */
+
+.footer-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.footer-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-paragraph-medium);
+}
+
+.social-item {
+  list-style-type: none;
+  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+  display: block;
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+}
+
+
 
 
