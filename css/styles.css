@@ -426,6 +426,8 @@
 
 .pages-item {
   list-style-type: none;
+  width: 50px;
+  height: 50px;
 }
 
 .pages-item:last-child a {
@@ -434,9 +436,11 @@
 
 .pages-item a {
   box-sizing: border-box;
-  display: block;
-  width: 50px;
-  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
