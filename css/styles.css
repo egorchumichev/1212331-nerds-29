@@ -20,13 +20,11 @@
   --special-green: #00CA74;
   --special-green-hover: #00BC6C;
   --special-green-active: #00AA62;
+
+  --special-sort-arrow: #231F20;
 }
 
-/* styles */
-
-.page {
-  font-family: "Roboto", "Arial", sans-serif;
-}
+/* global styles (header, footer, contacts) */
 
 /* header navigation */
 
@@ -57,6 +55,87 @@
 .navigation-links li {
   list-style-type: none;
 }
+
+/* contacts */
+
+.contact-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contact-address, .contact-phone a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  color: var(--basic-paragraph-light);
+}
+
+.contact-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-title-light);
+  background-color: var(--special-red);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 45px;
+  border-radius: 3px;
+}
+
+.contact-link:hover {
+  transition-duration: 0.2s;
+  background-color: var(--special-red-hover);
+}
+
+.contact-link:active {
+  background-color: var(--special-red-active);
+}
+
+.contact-link:active span {
+  opacity: 0.3;
+}
+
+/* footer */
+
+.footer-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.footer-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-paragraph-medium);
+}
+
+.social-item {
+  list-style-type: none;
+  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+  display: block;
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+}
+
+/* font */
+
+.page {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+/* index.html */
+
+
+/* styles */
 
 /* slider */
 
@@ -127,7 +206,7 @@
   text-transform: uppercase;
 }
 
-.service-decription {
+.service-description {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -271,75 +350,113 @@
   list-style-type: none;
 }
 
-/* contacts */
+/* catalog.html */
 
-.contact-title {
+/* header */
+
+.page-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  background-color: var(--basic-background);
+}
+
+/* sort menu */
+
+.sort-style {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.sort-arrow {
+  list-style-type: none;
+}
+
+/* viewlist */
+
+.viewlist-item {
+  list-style-type: none;
+}
+
+.viewlist-item div {
+  background-color: var(--basic-background);
+}
+
+.viewlist-item-title {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
 }
 
-.contact-address, .contact-phone a {
+.viewlist-item-description {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  text-decoration: none;
   color: var(--basic-paragraph-light);
 }
 
-.contact-link {
+.viewlist-item-button {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  color: var(--basic-title-light);
   background-color: var(--special-red);
+  padding: 15px 72px;
+  color: var(--basic-title-light);
   text-decoration: none;
   text-transform: uppercase;
-  padding: 15px 45px;
   border-radius: 3px;
 }
 
-.contact-link:hover {
+.viewlist-item-button:hover {
   transition-duration: 0.2s;
   background-color: var(--special-red-hover);
 }
 
-.contact-link:active {
+.viewlist-item-button:active {
   background-color: var(--special-red-active);
 }
 
-.contact-link:active span {
-  opacity: 0.3;
-}
-
-/* footer */
-
-.footer-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 36px;
-}
-
-.footer-description {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: var(--basic-paragraph-medium);
-}
-
-.social-item {
+.pages-item {
   list-style-type: none;
-  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
-  display: block;
-  width: 81px;
-  height: 81px;
-  border-radius: 50%;
 }
+
+.pages-item:last-child a {
+  width: 260px;
+}
+
+.pages-item a {
+  box-sizing: border-box;
+  display: block;
+  width: 50px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-background);
+  border-radius: 3px;
+  text-decoration: none;
+  color: var(--basic-title-dark);
+}
+
+.active-page a {
+  border: 3px solid var(--basic-background);
+  background-color: var(--basic-title-light);
+}
+
+
+
+
+
 
 
 
