@@ -11,155 +11,169 @@
 
 <body class="body-page">
   <header class="main-header">
-    <a href="index.html"><img src="img/logos/nerds-logo.svg" width="160" height="65" alt="Логотип компании Nerds"></a>
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
+      <a href="index.html"><img src="img/logos/nerds-logo.svg" width="160" height="65" alt="Логотип компании Nerds"></a>
       <ul class="navigation-links">
         <li><a class="navigation-link" href="">Студия</a></li>
         <li><a class="navigation-link" href="">Клиенты</a></li>
         <li><a class="navigation-link" href="catalog.html">Магазин</a></li>
         <li><a class="navigation-link" href="">Контакты</a></li>
       </ul>
+      <a class="cart-link" href="">Корзина</a>
     </nav>
-    <a class="cart-link" href="">Корзина</a>
-  </header>
-  <main>
     <h1 class="page-title">Магазин готовых шаблонов</h1>
-    <section>
-      <h2>Фильтр шаблонов</h2>
-      <!-- Здесь будет фильтр товаров -->
-    </section>
-    <section class="sort-block">
-      <h2 class="sort-title">Сортировать:</h2>
-      <ul>
-        <li class="sort-style"><a>По цене</a></li>
-        <li class="sort-style"><a>По типу</a></li>
-        <li class="sort-style"><a>По названию</a></li>
-      </ul>
-      <ul>
-        <li class="sort-arrow"><a>По убыванию</a></li>
-        <li class="sort-arrow"><a>По возростанию</a></li>
-      </ul>
-    </section>
-    <section сlass="viewlist-block">
-      <h2>Список шаблонов</h2>
-      <ul class="viewlist">
-        <li class="viewlist-item">
-          <div>
-            <h3 class="viewlist-item-title">Sedona</h3>
-            <p class="viewlist-item-description">
-              Информационный сайт
-              для туристов
-            </p>
-            <p>
-              <a class="viewlist-item-button" href="">9900 ₽</a>
-            </p>
+  </header>
+  <main class="catalog-main-content">
+    <div class="container">
+      <section class="filter">
+        <h2>Фильтр шаблонов</h2>
+        Это типа фильтр. И не важно, что его нет.
+      </section>
+      <div class="viewlist-wrapper">
+        <section class="sort-block">
+          <h2 class="sort-title">Сортировать:</h2>
+          <div class="sort-wrapper">
+            <ul>
+              <li class="sort-style"><a>По цене</a></li>
+              <li class="sort-style"><a>По типу</a></li>
+              <li class="sort-style"><a>По названию</a></li>
+            </ul>
+            <ul>
+              <li class="sort-arrow"><a>По убыванию</a></li>
+              <li class="sort-arrow"><a>По возростанию</a></li>
+            </ul>
           </div>
-          <a href=""><img src="img/previews/preview-aplus.jpg" width="360" height="580" alt="Макет Sedona"></a>
-        </li>
-        <li class="viewlist-item">
-          <div>
-            <h3 class="viewlist-item-title">Pink App</h3>
-            <p class="viewlist-item-description">
-              Продуктовый лендинг
-              приложения для iOS и Android
-            </p>
-            <p>
-              <a class="viewlist-item-button" href="">9900 ₽</a>
-            </p>
-          </div>
-          <a href=""><img src="img/previews/preview-pink.jpg" width="360" height="580" alt="Макет Pink App"></a>
-        </li>
-        <li class="viewlist-item">
-          <div>
-            <h3 class="viewlist-item-title">Barbershop</h3>
-            <p class="viewlist-item-description">
-              Описание
-            </p>
-            <p>
-              <a class="viewlist-item-button" href="">9900 ₽</a>
-            </p>
-          </div>
-          <a href=""><img src="img/previews/preview-barbershop.jpg" width="360" height="580" alt="Макет Barbershop"></a>
-        </li>
-        <li class="viewlist-item">
-          <div>
-            <h3 class="viewlist-item-title">Mishka</h3>
-            <p class="viewlist-item-description">
-              Описание
-            </p>
-            <p>
-              <a class="viewlist-item-button" href="">9900 ₽</a>
-            </p>
-          </div>
-          <p>
-            <a href=""><img src="img/previews/preview-mishka.jpg" width="360" height="580" alt="Макет Mishka"></a>
-          </p>
-        </li>
-        <li class="viewlist-item">
-          <div>
-            <h3 class="viewlist-item-title">Aplus</h3>
-            <p class="viewlist-item-description">
-              Описание
-            </p>
-            <p>
-              <a class="viewlist-item-button" href="">9900 ₽</a>
-            </p>
-          </div>
-          <p>
-            <a href=""><img src="img/previews/preview-aplus.jpg" width="360" height="580" alt="Макет Aplus"></a>
-          </p>
-        </li>
-        <li class="viewlist-item">
-          <div>
-            <h3 class="viewlist-item-title">Kvast</h3>
-            <p class="viewlist-item-description">
-              Описание
-            </p>
-            <p>
-              <a class="viewlist-item-button" href="">9900 ₽</a>
-            </p>
-          </div>
-          <p>
-            <a href="#"><img src="img/previews/preview-kvast.jpg" width="360" height="580" alt="Макет Kvast"></a>
-          </p>
-        </li>
-      </ul>
-    </section>
-    <section class="pages-block">
-      <h2>Страницы</h2>
-      <ul class="pages-list">
-        <li><a class="pages-item active-page"><span>1</span></a></li>
-        <li><a class="pages-item" href=""><span>2</span></a></li>
-        <li><a class="pages-item" href=""><span>3</span></a></li>
-        <li><a class="pages-item next-page-item" href=""><span>Следующая</span></a></li>
-      </ul>
-    </section>
+        </section>
+        <section сlass="viewlist-block">
+          <h2>Список шаблонов</h2>
+          <ul class="viewlist">
+            <li class="viewlist-item">
+              <div class="viewlist-item-info">
+                <h3 class="viewlist-item-title">Sedona</h3>
+                <p class="viewlist-item-description">
+                  Информационный сайт
+                  для туристов
+                </p>
+                <p>
+                  <a class="viewlist-item-button" href="">9900 ₽</a>
+                </p>
+              </div>
+              <a href=""><img src="img/previews/preview-aplus.jpg" width="360" height="580" alt="Макет Sedona"></a>
+            </li>
+            <li class="viewlist-item">
+              <div class="viewlist-item-info">
+                <h3 class="viewlist-item-title">Pink App</h3>
+                <p class="viewlist-item-description">
+                  Продуктовый лендинг
+                  приложения для iOS и Android
+                </p>
+                <p>
+                  <a class="viewlist-item-button" href="">9900 ₽</a>
+                </p>
+              </div>
+              <a href=""><img src="img/previews/preview-pink.jpg" width="360" height="580" alt="Макет Pink App"></a>
+            </li>
+            <li class="viewlist-item">
+              <div class="viewlist-item-info">
+                <h3 class="viewlist-item-title">Barbershop</h3>
+                <p class="viewlist-item-description">
+                  Описание
+                </p>
+                <p>
+                  <a class="viewlist-item-button" href="">9900 ₽</a>
+                </p>
+              </div>
+              <a href=""><img src="img/previews/preview-barbershop.jpg" width="360" height="580" alt="Макет Barbershop"></a>
+            </li>
+            <li class="viewlist-item">
+              <div class="viewlist-item-info">
+                <h3 class="viewlist-item-title">Mishka</h3>
+                <p class="viewlist-item-description">
+                  Описание
+                </p>
+                <p>
+                  <a class="viewlist-item-button" href="">9900 ₽</a>
+                </p>
+              </div>
+              <p>
+                <a href=""><img src="img/previews/preview-mishka.jpg" width="360" height="580" alt="Макет Mishka"></a>
+              </p>
+            </li>
+            <li class="viewlist-item">
+              <div class="viewlist-item-info">
+                <h3 class="viewlist-item-title">Aplus</h3>
+                <p class="viewlist-item-description">
+                  Описание
+                </p>
+                <p>
+                  <a class="viewlist-item-button" href="">9900 ₽</a>
+                </p>
+              </div>
+              <p>
+                <a href=""><img src="img/previews/preview-aplus.jpg" width="360" height="580" alt="Макет Aplus"></a>
+              </p>
+            </li>
+            <li class="viewlist-item">
+              <div class="viewlist-item-info">
+                <h3 class="viewlist-item-title">Kvast</h3>
+                <p class="viewlist-item-description">
+                  Описание
+                </p>
+                <p>
+                  <a class="viewlist-item-button" href="">9900 ₽</a>
+                </p>
+              </div>
+              <p>
+                <a href="#"><img src="img/previews/preview-kvast.jpg" width="360" height="580" alt="Макет Kvast"></a>
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="pages-block">
+          <h2>Страницы</h2>
+          <ul class="pages-list">
+            <li><a class="pages-item active-page"><span>1</span></a></li>
+            <li><a class="pages-item" href=""><span>2</span></a></li>
+            <li><a class="pages-item" href=""><span>3</span></a></li>
+            <li><a class="pages-item next-page-item" href=""><span>Следующая</span></a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
     <section class="contact-block">
-      <h2 class="contact-title">Nёrds Design Studio</h2>
-      <address class="contact-address">
-        191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </address>
-      <p class="contact-phone"><a href="tel:+78122757575">Тел. +7 (812) 275-75-75</a></p>
-      <a class="contact-link" href=""><span>Напишите нам</span></a>
+      <div class="container">
+        <div class="contact-wrapper">
+          <h2 class="contact-title">Nёrds Design Studio</h2>
+          <address class="contact-address">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </address>
+          <p class="contact-phone"><a href="tel:+78122757575">Тел. +7 (812) 275-75-75</a></p>
+          <a class="contact-link" href=""><span>Напишите нам</span></a>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
-    <p class="footer-title">Давайте дружить, это выгодно!</p>
-    <p class="footer-description">Скидка 10% для друзей из социальных сетей.</p>
-    <ul class="social-links">
-      <li class="social-item">
-        <p>Мы во ВКонтакте</p>
-        <a class="social-vk" href=""></a>
-      </li>
-      <li class="social-item">
-        <p>Мы в Facebook</p>
-        <a class="social-facebook" href=""></a>
-      </li>
-      <li class="social-item">
-        <p>Мы в Instagram</p>
-        <a class="social-instagram" href=""></a>
-      </li>
-    </ul>
+    <div class="footer-wrapper container">
+      <div class="sale-slogan-wrapper">
+        <p class="footer-title">Давайте дружить, это выгодно!</p>
+        <p class="footer-description">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+      <ul class="social-links">
+        <li class="social-item">
+          <p>Мы во ВКонтакте</p>
+          <a class="social-vk" href=""></a>
+        </li>
+        <li class="social-item">
+          <p>Мы в Facebook</p>
+          <a class="social-facebook" href=""></a>
+        </li>
+        <li class="social-item">
+          <p>Мы в Instagram</p>
+          <a class="social-instagram" href=""></a>
+        </li>
+      </ul>
+    </div>
   </footer>
 </body>
 

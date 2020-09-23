@@ -11,22 +11,22 @@
 
 <body class="body-page">
   <header class="main-header">
-    <a><img src="img/logos/nerds-logo.svg" width="160" height="65" alt="Логотип компании Nerds"></a>
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
+      <a><img src="img/logos/nerds-logo.svg" width="160" height="65" alt="Логотип компании Nerds"></a>
       <ul class="navigation-links">
         <li><a class="navigation-link" href="">Студия</a></li>
         <li><a class="navigation-link" href="">Клиенты</a></li>
         <li><a class="navigation-link" href="catalog.html">Магазин</a></li>
         <li><a class="navigation-link" href="">Контакты</a></li>
       </ul>
+      <a class="cart-link" href="">Корзина</a>
     </nav>
-    <a class="cart-link" href="">Корзина</a>
   </header>
   <main class="main-content">
     <h1>Дизайн-компания "Nerds"</h1>
     <section class="slider-block">
       <h2>Информация о услугах:</h2>
-      <ul class="slider">
+      <ul class="slider container">
         <li class="slide-item">
           <h3 class="slide-title">
             Долго, дорого, скрупулезно
@@ -63,7 +63,7 @@
     </section>
     <section class="services-block">
       <h2>Наши услуги:</h2>
-      <ul class="service-cards">
+      <ul class="service-cards container">
         <li class="service-card web-sites-card">
           <h3 class="service-title">Веб-сайты</h3>
           <p class="service-decription">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
@@ -83,39 +83,44 @@
     </section>
     <section class="company-block">
       <h2>О нашей компании:</h2>
-      <div class="company-info">
-        <h3 class="company-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
-        <p class="company-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчетпревыше креатива. Работаем не покладая рук, как роботы.
-        </p>
-        <h4 class="orders-title">Выполняем заказы на разработку:</h4>
-        <ul class="orders-list">
-          <li class="order-item">Веб-сайтов любой сложности</li>
-          <li class="order-item">Мобильных приложений для iOS и Android</li>
-          <li class="order-item">Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
+      <div class="company-info container">
+        <div class="company-info-wrapper">
+          <h3 class="company-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
+          <p class="company-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчетпревыше креатива. Работаем не покладая рук, как роботы.
+          </p>
+        </div>
         <img class="company-illustration" src="img/nerds-illustration.png" width="360" height="208" alt="Иллюстрация с логотипом Nerds">
+        <div class="company-orders-wrapper">
+          <h4 class="orders-title">Выполняем заказы на разработку:</h4>
+          <ul class="orders-list">
+            <li class="order-item">Веб-сайтов любой сложности</li>
+            <li class="order-item">Мобильных приложений для iOS и Android</li>
+            <li class="order-item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="company-stats-wrapper">
+          <h3 class="stats-title">С 2004 года Любим точность во всем:</h3>
+          <ul class="stats-list">
+            <li class="stats-point">
+              <h4 class="point-title">Уровень самоотдачи</h4>
+              <p class="point-value">146%</p>
+            </li>
+            <li class="stats-point">
+              <h4 class="point-title">Соблюдение сроков</h4>
+              <p class="point-value">100%</p>
+            </li>
+            <li class="stats-point">
+              <h4 class="point-title">Минимальная предоплата</h4>
+              <p class="point-value">50%</p>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="company-stats">
-        <h3 class="stats-title">С 2004 года Любим точность во всем:</h3>
-        <ul class="stats-list">
-          <li class="stats-point">
-            <h4 class="point-title">Уровень самоотдачи</h4>
-            <p class="point-value">146%</p>
-          </li>
-          <li class="stats-point">
-            <h4 class="point-title">Соблюдение сроков</h4>
-            <p class="point-value">100%</p>
-          </li>
-          <li class="stats-point">
-            <h4 class="point-title">Минимальная предоплата</h4>
-            <p class="point-value">50%</p>
-          </li>
-        </ul>
-      </div>
+
     </section>
     <section class="partners-block">
       <h2>Наши партнёры:</h2>
-      <ul class="partners-list">
+      <ul class="partners-list container">
         <li class="partner-item">
           <h3>Сайт "HTML Academy"</h3>
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="partner-logo" width="200" height="68" src="img/logos/HTML-Academy-logo.svg" alt="HTML Academy"></a>
@@ -135,31 +140,39 @@
       </ul>
     </section>
     <section class="contact-block">
-      <h2 class="contact-title">Nёrds Design Studio</h2>
-      <address class="contact-address">
-        191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </address>
-      <p class="contact-phone"><a href="tel:+78122757575">Тел. +7 (812) 275-75-75</a></p>
-      <a class="contact-link" href=""><span>Напишите нам</span></a>
+      <div class="container">
+        <div class="contact-wrapper">
+          <h2 class="contact-title">Nёrds Design Studio</h2>
+          <address class="contact-address">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </address>
+          <p class="contact-phone"><a href="tel:+78122757575">Тел. +7 (812) 275-75-75</a></p>
+          <a class="contact-link" href=""><span>Напишите нам</span></a>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
-    <p class="footer-title">Давайте дружить, это выгодно!</p>
-    <p class="footer-description">Скидка 10% для друзей из социальных сетей.</p>
-    <ul class="social-links">
-      <li class="social-item">
-        <p>Мы во ВКонтакте</p>
-        <a class="social-vk" href=""></a>
-      </li>
-      <li class="social-item">
-        <p>Мы в Facebook</p>
-        <a class="social-facebook" href=""></a>
-      </li>
-      <li class="social-item">
-        <p>Мы в Instagram</p>
-        <a class="social-instagram" href=""></a>
-      </li>
-    </ul>
+    <div class="footer-wrapper container">
+      <div class="sale-slogan-wrapper">
+        <p class="footer-title">Давайте дружить, это выгодно!</p>
+        <p class="footer-description">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+      <ul class="social-links">
+        <li class="social-item">
+          <p>Мы во ВКонтакте</p>
+          <a class="social-vk" href=""></a>
+        </li>
+        <li class="social-item">
+          <p>Мы в Facebook</p>
+          <a class="social-facebook" href=""></a>
+        </li>
+        <li class="social-item">
+          <p>Мы в Instagram</p>
+          <a class="social-instagram" href=""></a>
+        </li>
+      </ul>
+    </div>
   </footer>
 </body>
 
