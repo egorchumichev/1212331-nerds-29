@@ -29,6 +29,17 @@
 
 /* global styles (header, footer, contacts) */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
 .page {
   height: 100%;
 }
@@ -44,15 +55,18 @@
   width: 1160px;
   margin: 0 auto;
 }
+
 /* header navigation */
 
 .main-header {
+  padding-top: 50px;
   background-color: var(--basic-background);
   display: grid;
 }
+
 .main-navigation {
   display: grid;
-  grid-template-columns: 160px 1fr 160px;
+  grid-template-columns: 160px auto 160px;
 }
 
 .navigation-link, .cart-link {
@@ -63,6 +77,12 @@
   text-decoration: none;
   text-transform: uppercase;
   color: var(--basic-title-dark);
+}
+
+.cart-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .navigation-link:hover, .cart-link:hover {
@@ -77,18 +97,29 @@
 
 .navigation-links li {
   list-style-type: none;
+  margin: 0 22.5px;
 }
 
 .navigation-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   margin: 0;
 }
 
 /* contacts */
+
 .contact-block {
   background-color: var(--basic-background);
 }
+
+.contact-block .container {
+  padding: 54px 0;
+}
+
 .contact-title {
+  text-transform: uppercase;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -115,6 +146,8 @@
   text-transform: uppercase;
   padding: 15px 45px;
   border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 48px;
 }
 
 .contact-link:hover {
@@ -133,6 +166,7 @@
 
 .contact-wrapper {
   width: 319px;
+  padding: 50px 0 0 50px;
   background-color: var(--basic-title-light);
 }
 /* footer */
@@ -202,11 +236,17 @@
 .slider {
   padding: 0;
 }
+
+.slide-item {
+  padding: 80px 0;
+  width: 600px;
+}
 .slide-title {
   font-style: normal;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  margin: 0;
 }
 
 .slide-description {
@@ -215,6 +255,7 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-paragraph-dark);
+  margin: 25px 0 38px 0;
 }
 
 .slide-link {
@@ -228,6 +269,7 @@
   background-color: var(--special-red);
   padding: 16px 54px;
   border-radius: 3px;
+  display: inline-block;
 }
 
 .slide-link:hover {
@@ -249,6 +291,7 @@
 }
 
 .slide-button button {
+  display: none; /* временно отключил кнопки */
   width: 18px;
   height: 18px;
   border: none;
@@ -265,8 +308,9 @@
 .service-cards {
   display: grid;
   grid-template-columns: 300px 300px 300px;
+  padding: 80px 0;
   grid-gap: 100px;
-  padding: 0;
+  border-bottom: 2px solid var(--basic-background);
 }
 
 .service-title {
@@ -275,6 +319,7 @@
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 25px 0 16px 0;
 }
 
 .service-description {
@@ -283,9 +328,11 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-paragraph-dark);
+  margin-bottom: 32px;
 }
 
 .service-link {
+  display: inline-block;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -358,16 +405,32 @@
 }
 
 /* company */
+
 .company-info {
   display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 360px;
 }
+.company-info-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-stats-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .company-title {
   font-style: normal;
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
+  margin: 72px 0 0 0;
+}
+
+.company-illustration {
+  margin-top: 39px;
 }
 
 .company-description {
@@ -375,6 +438,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  margin: 32px 0 0 0;
   color: var(--basic-paragraph-dark);
 }
 
@@ -385,6 +449,7 @@
   line-height: 24px;
   text-transform: uppercase;
   color: var(--basic-paragraph-dark);
+  margin: 40px 0 23px 0;
 }
 
 .order-item {
@@ -396,17 +461,24 @@
 }
 
 .stats-title {
+  text-align: center;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
+  margin-top: 37px;
 }
 
 .stats-point {
   list-style-type: none;
 }
 
+.stats-list {
+  display: flex;
+  padding: 0;
+  margin-top: 31px;
+}
 .point-title {
   font-style: normal;
   font-weight: normal;
@@ -420,6 +492,11 @@
   font-weight: bold;
   font-size: 45px;
   line-height: 64px;
+}
+
+.point-value span {
+  font-size: 26px;
+  line-height: 40px;
 }
 
 /* partners */
