@@ -168,6 +168,7 @@
   width: 319px;
   padding: 50px 0 0 50px;
   background-color: var(--basic-title-light);
+  box-sizing: border-box;
 }
 /* footer */
 
@@ -472,12 +473,14 @@
 
 .stats-point {
   list-style-type: none;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .stats-list {
   display: flex;
   padding: 0;
-  margin-top: 31px;
+  margin: 0;
 }
 .point-title {
   font-style: normal;
@@ -485,6 +488,8 @@
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-paragraph-dark);
+  margin-top: 31px;
+  padding: 0;
 }
 
 .point-value {
@@ -492,6 +497,8 @@
   font-weight: bold;
   font-size: 45px;
   line-height: 64px;
+  padding: 0;
+  margin: 0;
 }
 
 .point-value span {
@@ -501,13 +508,16 @@
 
 /* partners */
 
+.partners-block {
+  margin-bottom: 80px;
+}
 .partner-item {
   list-style-type: none;
 }
 
 .partners-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* catalog.html */
@@ -572,6 +582,13 @@
   list-style-type: none;
 }
 
+.sort-title {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;;
+}
 /* viewlist */
 
 .viewlist {
