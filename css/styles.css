@@ -26,6 +26,7 @@
   --special-page-item-active: #D5D5D5;
   --special-logo-active: #A6A6A6;
   --special-social-item: #E1E1E1;
+  --special-border: #C1C1C1;
 }
 
 /* global styles (header, footer, contacts) */
@@ -446,6 +447,12 @@
   border-radius: 50%;
   margin-right: 17px;
   background-color: var(--basic-title-light);
+}
+
+.active-slide-button {
+  background-image: url(../img/UI/active-slide.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .slide-button button:hover {
