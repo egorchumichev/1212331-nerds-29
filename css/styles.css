@@ -59,6 +59,10 @@
 
 /* header navigation */
 
+.active-link {
+  border-bottom: 2px solid var(--special-red);
+}
+
 .main-header {
   padding-top: 49px;
   background-color: var(--basic-background);
@@ -91,6 +95,8 @@
   text-decoration: none;
   text-transform: uppercase;
   color: var(--basic-title-dark);
+  display: block;
+  height: 100%;
 }
 
 .cart-link {
@@ -187,11 +193,11 @@
   background-color: var(--special-red);
   text-decoration: none;
   text-transform: uppercase;
-  padding: 15px 45px;
+  padding: 16px 45px;
   border-radius: 3px;
   display: inline-block;
   margin-bottom: 48px;
-  margin-top: 37px;
+  margin-top: 36px;
 }
 
 .contact-link:hover {
@@ -220,7 +226,7 @@
   display: grid;
   grid-template-columns: 260px auto;
   grid-gap: 140px;
-  padding: 70px 0;
+  padding: 68px 0;
 }
 
 .footer-title {
@@ -773,7 +779,7 @@
   font-size: 55px;
   line-height: 55px;
   background-color: var(--basic-background);
-  margin: 78px 0 108px 0;
+  margin: 72px 0 108px 0;
   justify-self: center;
 }
 
@@ -796,7 +802,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 55px;
+  margin-top: 57px;
   margin-bottom: 48px;
 }
 .sort-wrapper {
@@ -847,7 +853,6 @@
 .sort-arrow {
   list-style-type: none;
   display: flex;
-  align-items: center;
   cursor: pointer;
 }
 
@@ -888,13 +893,13 @@
 .viewlist {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
+  grid-gap: 31px 40px;
   padding: 0;
 }
 
 .viewlist-item {
   list-style-type: none;
-  width: 358px;
+  width: 360px;
   height: 618px;
   position: relative;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -942,6 +947,7 @@
   line-height: 30px;
   margin: 0;
   margin-top: 26px;
+  text-transform: uppercase;
 }
 
 .viewlist-item-title:hover {
@@ -972,13 +978,13 @@
   font-size: 16px;
   line-height: 18px;
   background-color: var(--special-red);
-  padding: 15px 72px;
+  padding: 16px 75px;
   color: var(--basic-title-light);
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 3px;
   margin-top: 32px;
-  margin-bottom: 44px;
+  margin-bottom: 42px;
 }
 
 .viewlist-item-button:hover {
@@ -992,15 +998,15 @@
 }
 
 .pages-block {
-  margin-top: 55px;
-  margin-bottom: 60px;
+  margin-top: 57px;
+  margin-bottom: 62px;
 }
 
 .pages-list li {
   list-style-type: none;
   width: 50px;
   height: 50px;
-  margin-right: 15px;
+  margin-right: 11px;
 }
 
 .pages-list {
