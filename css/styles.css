@@ -1285,6 +1285,16 @@
   line-height: 22px;
 }
 
+.price-input::-webkit-outer-spin-button,
+.price-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.price-input {
+  -moz-appearance: textfield;
+}
+
 .grid-field {
   margin-bottom: 20px;
 }
@@ -1368,6 +1378,14 @@
 
 .radio-input:disabled + .radio-label {
   opacity: 0.3;
+}
+
+.radio-input:focus + .radio-label:before {
+  opacity: 1;
+}
+
+.checkbox-input:focus + .checkbox-label:before {
+  opacity: 1;
 }
 
 .checkbox-input:disabled + .checkbox-label::before {
