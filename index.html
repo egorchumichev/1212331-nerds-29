@@ -169,39 +169,37 @@
       </div>
       <ul class="social-links">
         <li class="social-item social-vk">
-          <p class="visually-hidden">Мы во ВКонтакте</p>
-          <a href=""></a>
+          <a area-label="Мы во ВКонтакте" href=""></a>
         </li>
         <li class="social-item social-facebook">
-          <p class="visually-hidden">Мы в Facebook</p>
-          <a href=""></a>
+          <a area-label="Мы в Facebook" href=""></a>
         </li>
         <li class="social-item social-instagram">
-          <p class="visually-hidden">Мы в Instagram</p>
-          <a href=""></a>
+          <a area-label="Мы в Instagram" href=""></a>
         </li>
       </ul>
     </div>
   </footer>
-  <section class="modal contact-modal">
+  <section class="modal">
     <h2 class="contact-modal-title">Напишите нам</h2>
     <form class="contact-modal-form">
       <label class="name-label">
         <span class="input-label">Ваше имя:</span>
-        <input class="name-input" placeholder="Имя Фамилия" type="text">
+        <input name="name" class="name-input" placeholder="Имя Фамилия" type="text">
       </label>
       <label class="email-label">
         <span class="input-label">Ваш email:</span>
-        <input class="email-input" placeholder="email@example.com" type="email">
+        <input name="email" class="email-input" placeholder="email@example.com" type="email">
       </label>
       <label class="letter-label">
         <span class="input-label">Текст письма:</span>
-        <textarea class="letter-input" placeholder="В свободной форме"></textarea>
+        <textarea name="message" class="letter-input" placeholder="В свободной форме"></textarea>
       </label>
       <button class="input-submit" type="submit"><span>Отправить</span></button>
     </form>
     <button class="close-modal-button" aria-label="Закрыть"></button>
   </section>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
