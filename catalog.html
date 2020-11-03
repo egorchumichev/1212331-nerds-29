@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.min.css">
   <title>HTML Academy: Nёrds</title>
 </head>
 
@@ -32,7 +32,7 @@
     <div class="container">
       <section class="filter">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
-        <form class="filter-form">
+        <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru">
           <fieldset class="field price-field">
             <legend>Стоимость:</legend>
             <div class="range-filter">
@@ -226,21 +226,25 @@
         <p class="footer-description">Скидка 10% для друзей из социальных сетей.</p>
       </div>
       <ul class="social-links">
+
         <li class="social-item social-vk">
-          <a area-label="Мы во ВКонтакте" href=""></a>
+          <p class="visually-hidden">Мы во ВКонтакте</p>
+          <a href=""></a>
         </li>
         <li class="social-item social-facebook">
-          <a area-label="Мы в Facebook" href=""></a>
+          <p class="visually-hidden">Мы в Facebook</p>
+          <a href=""></a>
         </li>
         <li class="social-item social-instagram">
-          <a area-label="Мы в Instagram" href=""></a>
+          <p class="visually-hidden">Мы в Instagram</p>
+          <a href=""></a>
         </li>
       </ul>
     </div>
   </footer>
   <section class="modal modal-close">
     <h2 class="contact-modal-title">Напишите нам</h2>
-    <form class="contact-modal-form">
+    <form class="contact-modal-form" method="GET" action="https://echo.htmlacademy.ru">
       <label class="name-label">
         <span class="input-label">Ваше имя:</span>
         <input name="name" class="name-input" placeholder="Имя Фамилия" type="text">
@@ -257,7 +261,7 @@
     </form>
     <button class="close-modal-button" aria-label="Закрыть"></button>
   </section>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
