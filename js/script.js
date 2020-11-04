@@ -30,6 +30,8 @@ contactForm.addEventListener("submit", function (evt) {
 
   if (!nameInput.value || !emailInput.value || !messageInput.value) {
     evt.preventDefault();
+    modalWindow.classList.remove("modal-error");
+    modalWindow.offsetWidth = modalWindow.offsetWidth;
     modalWindow.classList.add("modal-error");
   }
   else {

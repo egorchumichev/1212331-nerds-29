@@ -8,7 +8,6 @@
   --basic-paragraph-light: #666666;
   --basic-background: #EEEEEE;
 
-
   --special-red: #FB565A;
   --special-red-hover: #E74246;
   --special-red-active: #D7373B;
@@ -25,11 +24,18 @@
   --special-page-item-hover: #DFDFDF;
   --special-page-item-active: #D5D5D5;
   --special-input-border: #D7DCDE;
+  --special-input-border-hover: #B4B9BB;
   --special-logo-active: #A6A6A6;
   --special-social-item: #E1E1E1;
   --special-border: #C1C1C1;
   --special-toggle-color: #ABABAB;
   --special-checkbox-color: #4D4D4D;
+
+  --special-button-shadow: rgba(0, 1, 1, 0.1);
+  --special-viewlist-item-border: rgba(0, 0, 0, 0.1);
+  --special-viewlist-item-shadow: rgba(0, 1, 1, 0.25);
+  --special-modal-shadow: rgba(0, 0, 0, 0.4);
+  --special-toggle-shadow: rgba(0, 0, 0, 0.15);
 }
 
 /* global styles (header, footer, contacts) */
@@ -57,6 +63,7 @@
 }
 
 .container {
+  display: block;
   width: 1160px;
   margin: 0 auto;
 }
@@ -85,11 +92,11 @@
   display: block;
 }
 
-.main-navigation path {
+.main-logo-link path {
   fill: var(--basic-title-dark);
 }
 
-.main-navigation a:active path {
+.main-logo-link:active path {
   fill: var(--special-logo-active);
   transition: 0.2s;
 }
@@ -120,7 +127,6 @@
   content: "";
   position: absolute;
   right: 95px;
-  top: 7px;
   width: 15px;
   height: 15px;
   background-image: url(../img/ui/cart-icon.svg);
@@ -157,6 +163,12 @@
 }
 
 /* contacts */
+
+.map-iframe {
+  width: 100%;
+  height: 416px;
+  border: none;
+}
 
 .contact-block {
   background-color: var(--basic-background);
@@ -219,7 +231,7 @@
 
 .contact-link:active {
   background-color: var(--special-red-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--special-button-shadow);
 }
 
 .contact-link:active span {
@@ -273,32 +285,28 @@
 
 .social-item {
   list-style-type: none;
-  background-color: var(--special-social-item);
-  display: block;
-  width: 81px;
-  height: 81px;
-  border-radius: 50%;
   margin-right: 10px;
+}
+
+.social-item:nth-child(3n) {
+  margin-right: 0px;
 }
 
 .social-item a {
   display: block;
-  width: 100%;
-  height: 100%;
-}
-.social-item:last-child {
-  margin-right: 0px;
+  background-color: var(--special-social-item);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
 }
 
 .social-links {
   margin: 0;
   padding: 0;
-  display: flex;
-  align-items: center;
-}
-
-.social-instagram {
-  position: relative;
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+  grid-gap: 10px;
 }
 
 .social-instagram::before {
@@ -351,14 +359,14 @@
   opacity: 0.3;
 }
 
-.social-item:hover {
+.social-item a:hover {
   transition-duration: 0.2s;
   background-color: var(--special-red-hover);
   cursor: pointer;
 }
 
-.social-item:active {
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+.social-item a:active {
+  box-shadow: inset 0px 3px 0px var(--special-button-shadow);
   background-color: var(--special-red-active);
 }
 
@@ -375,6 +383,7 @@
 .slider-block {
   background-color: var(--basic-background);
   position: relative;
+  padding-top: 5px;
 }
 .slider {
   padding: 0;
@@ -418,6 +427,7 @@
   line-height: 24px;
   color: var(--basic-paragraph-dark);
   margin: 25px 0 38px 0;
+  width: 450px;
 }
 
 .slide-link {
@@ -442,7 +452,7 @@
 
 .slide-link:active {
   background-color: var(--special-red-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--special-button-shadow);
 }
 
 .slide-link:active span{
@@ -540,7 +550,7 @@
 
 .web-sites-button:active {
   background-color: var(--special-red-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--special-button-shadow);
 }
 
 .web-sites-button:active span {
@@ -568,7 +578,7 @@
 
 .apps-button:active {
   background-color: var(--special-green-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--special-button-shadow);
 }
 
 .apps-button:active span {
@@ -596,7 +606,7 @@
 
 .presentations-button:active {
   background-color: var(--special-yellow-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--special-button-shadow);
 }
 
 .presentations-button:active span {
@@ -810,6 +820,7 @@
   line-height: 55px;
   background-color: var(--basic-background);
   margin: 72px 0 108px 0;
+  text-align: center;
   justify-self: center;
 }
 
@@ -818,7 +829,6 @@
   grid-template-columns: 260px auto;
   grid-gap: 140px;
 }
-/* временные стили для фильтра, чтобы примерно видеть грид на странице */
 
 .filter {
   width: 260px;
@@ -931,7 +941,7 @@
   width: 360px;
   height: 618px;
   position: relative;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--special-viewlist-item-border);
   box-sizing: border-box;
   border-radius: 5px;
   overflow: hidden;
@@ -951,7 +961,7 @@
 }
 .viewlist-item:hover {
   transition-duration: 0.2s;
-  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+  box-shadow: 0px 6px 15px var(--special-viewlist-item-shadow);
 }
 .viewlist-item:hover .viewlist-item-info {
   transform: translateY(0px);
@@ -960,32 +970,37 @@
 .viewlist-item-info {
   background-color: var(--basic-background);
   width: 100%;
+  padding-right: 25px;
+  padding-left: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
   bottom: 0;
   transition: 0.3s;
+  box-sizing: border-box;
   transform: translateY(100%);
 }
 
-.viewlist-item-title {
+.viewlist-item-title a {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   margin: 0;
   margin-top: 26px;
+  color: var(--basic-title-dark);
+  text-decoration: none;
   text-transform: uppercase;
 }
 
-.viewlist-item-title:hover {
+.viewlist-item-title a:hover {
   transition-duration: 0.2s;
   color: var(--special-red);
   cursor: pointer;
 }
 
-.viewlist-item-title:active {
+.viewlist-item-title a:active {
   color: var(--basic-title-dark);
   opacity: 0.3;
 }
@@ -1023,7 +1038,7 @@
 
 .viewlist-item-button:active {
   background-color: var(--special-red-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--special-button-shadow);
 }
 
 .pages-block {
@@ -1074,7 +1089,7 @@
 .pages-item:active {
   border: none;
   background-color: var(--special-page-item-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--special-button-shadow);
 }
 
 .pages-item:active span {
@@ -1109,7 +1124,7 @@
   margin: auto;
   width: 960px;
   background-color: var(--basic-title-light);
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 40px var(--special-modal-shadow);
   margin: auto;
   box-sizing: border-box;
   top: 80px;
@@ -1144,6 +1159,11 @@
   border-radius: 3px;
 }
 
+.name-input:hover, .letter-input:hover, .email-input:hover {
+  border: 2px solid var(--special-input-border-hover);
+  transition-duration: 0.2s;
+}
+
 .name-input, .email-input {
   width: 360px;
   height: 50px;
@@ -1153,6 +1173,7 @@
 
 .letter-input {
   width: 100%;
+  margin-top: 10px;
   margin-bottom: 45px;
   height: 118px;
 }
@@ -1187,7 +1208,7 @@
 
 .input-submit:active {
   background-color: var(--special-red-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--special-button-shadow);
 }
 
 .contact-modal-form {
@@ -1276,7 +1297,7 @@
   background-color: var(--special-toggle-color);
   border-radius: 50%;
   border: 8px solid var(--basic-title-light);
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 1px var(--special-toggle-shadow);
   position: absolute;
   transform: translateX(-50%);
   top: 50%;
@@ -1449,7 +1470,7 @@
 
 .filter-submit-button:active {
   background-color: var(--special-page-item-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--special-button-shadow);
 }
 
 .filter-submit-button:active span {
